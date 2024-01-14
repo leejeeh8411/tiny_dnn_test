@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5B20F21A-C7FF-3FF3-B21C-DBA778DCFBC8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>all_unity</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace\tiny-dnn\examples\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/workspace/tiny-dnn/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/workspace/tiny-dnn -BD:/workspace/tiny-dnn --check-stamp-file D:/workspace/tiny-dnn/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace\tiny-dnn\examples\benchmarks_all_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_cifar_test_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_cifar_train_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_deconv_train_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_deconv_visual_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_mnist_quantized_train_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_mnist_test_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_mnist_train_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_recurrent_addition_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_sinus_fit_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_ssd_test_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_test_char_rnn_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_train_char_rnn_CXX_cotire.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace\tiny-dnn\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/workspace/tiny-dnn/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/workspace/tiny-dnn -BD:/workspace/tiny-dnn --check-stamp-file D:/workspace/tiny-dnn/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace\tiny-dnn\examples\benchmarks_all_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_cifar_test_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_cifar_train_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_deconv_train_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_deconv_visual_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_mnist_quantized_train_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_mnist_test_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_mnist_train_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_recurrent_addition_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_sinus_fit_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_ssd_test_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_test_char_rnn_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_train_char_rnn_CXX_cotire.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace\tiny-dnn\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/workspace/tiny-dnn/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/workspace/tiny-dnn -BD:/workspace/tiny-dnn --check-stamp-file D:/workspace/tiny-dnn/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace\tiny-dnn\examples\benchmarks_all_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_cifar_test_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_cifar_train_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_deconv_train_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_deconv_visual_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_mnist_quantized_train_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_mnist_test_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_mnist_train_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_recurrent_addition_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_sinus_fit_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_ssd_test_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_test_char_rnn_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_train_char_rnn_CXX_cotire.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace\tiny-dnn\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/workspace/tiny-dnn/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/workspace/tiny-dnn -BD:/workspace/tiny-dnn --check-stamp-file D:/workspace/tiny-dnn/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace\tiny-dnn\examples\benchmarks_all_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_cifar_test_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_cifar_train_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_deconv_train_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_deconv_visual_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_mnist_quantized_train_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_mnist_test_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_mnist_train_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_recurrent_addition_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_sinus_fit_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_ssd_test_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_test_char_rnn_CXX_cotire.cmake;D:\workspace\tiny-dnn\examples\example_train_char_rnn_CXX_cotire.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace\tiny-dnn\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\workspace\tiny-dnn\ZERO_CHECK.vcxproj">
+      <Project>{D96E140D-3DE1-3F2A-ACA0-591942C55D5A}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\tiny-dnn\examples\benchmarks_all_unity.vcxproj">
+      <Project>{5A439545-B3C5-3262-81BE-A9893B4AFA0D}</Project>
+      <Name>benchmarks_all_unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\tiny-dnn\examples\example_cifar_test_unity.vcxproj">
+      <Project>{686045C6-19BF-347B-BEA7-29A1AA12CC65}</Project>
+      <Name>example_cifar_test_unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\tiny-dnn\examples\example_cifar_train_unity.vcxproj">
+      <Project>{5BDA31F6-C3E6-3F78-8EA5-AB79837C169F}</Project>
+      <Name>example_cifar_train_unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\tiny-dnn\examples\example_deconv_train_unity.vcxproj">
+      <Project>{C2AA8808-7F47-3201-95C8-16D575AB9A6D}</Project>
+      <Name>example_deconv_train_unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\tiny-dnn\examples\example_deconv_visual_unity.vcxproj">
+      <Project>{1924F8A7-17AF-3219-B656-44D7F646AAAE}</Project>
+      <Name>example_deconv_visual_unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\tiny-dnn\examples\example_mnist_quantized_train_unity.vcxproj">
+      <Project>{F63A2567-952B-3A23-9CD9-EB8B3847E35A}</Project>
+      <Name>example_mnist_quantized_train_unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\tiny-dnn\examples\example_mnist_test_unity.vcxproj">
+      <Project>{329A7327-806B-3903-9697-FF5621628E4D}</Project>
+      <Name>example_mnist_test_unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\tiny-dnn\examples\example_mnist_train_unity.vcxproj">
+      <Project>{719BAC9C-8064-32A6-8ED0-EED5FBADE980}</Project>
+      <Name>example_mnist_train_unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\tiny-dnn\examples\example_recurrent_addition_unity.vcxproj">
+      <Project>{C135A65C-1A74-3737-9E6D-78A0BB47D200}</Project>
+      <Name>example_recurrent_addition_unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\tiny-dnn\examples\example_sinus_fit_unity.vcxproj">
+      <Project>{27E620D8-3039-3222-8214-C96885639A1F}</Project>
+      <Name>example_sinus_fit_unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\tiny-dnn\examples\example_ssd_test_unity.vcxproj">
+      <Project>{197A682A-3791-308A-B20E-07E0C93CE883}</Project>
+      <Name>example_ssd_test_unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\tiny-dnn\examples\example_test_char_rnn_unity.vcxproj">
+      <Project>{579A05BA-BD2D-36E9-91C3-90C5CC6B52FA}</Project>
+      <Name>example_test_char_rnn_unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\tiny-dnn\examples\example_train_char_rnn_unity.vcxproj">
+      <Project>{AA866461-01C3-34D0-9044-0913215D3B5E}</Project>
+      <Name>example_train_char_rnn_unity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
