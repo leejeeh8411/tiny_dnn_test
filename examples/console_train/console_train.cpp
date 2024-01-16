@@ -102,11 +102,11 @@ void convert_label(const std::string& imagefilename, tiny_dnn::label_t& labels)
     uint8_t label = 0;
     if (strLabel == "OK")
     {
-        label = 0;
+        label = 0x01;
     }
     else if (strLabel == "NG")
     {
-        label = 1;
+        label = 0x04;
     }
     
     labels = static_cast<tiny_dnn::label_t>(label);
@@ -172,14 +172,15 @@ static void train_lenet(const std::string& data_dir_path,
         test_labels.emplace_back(label);
     }
 
-    /*tiny_dnn::parse_mnist_images(data_dir_path + "/train-images.idx3-ubyte",
+   /* std::string mnist_path = "D:\\mnist_data";
+    tiny_dnn::parse_mnist_images(mnist_path + "/train-images.idx3-ubyte",
         &train_images, -1.0, 1.0, 2, 2);
-    tiny_dnn::parse_mnist_labels(data_dir_path + "/train" + "/work" + "/train-labels.idx1-ubyte",
+    tiny_dnn::parse_mnist_labels(mnist_path + "/train-labels.idx1-ubyte",
         &train_labels);
    
-    tiny_dnn::parse_mnist_labels(data_dir_path + "/t10k-labels.idx1-ubyte",
+    tiny_dnn::parse_mnist_labels(mnist_path + "/t10k-labels.idx1-ubyte",
         &test_labels);
-    tiny_dnn::parse_mnist_images(data_dir_path + "/t10k-images.idx3-ubyte",
+    tiny_dnn::parse_mnist_images(mnist_path + "/t10k-images.idx3-ubyte",
         &test_images, -1.0, 1.0, 2, 2);*/
 
     std::cout << "start training" << std::endl;
@@ -217,7 +218,7 @@ static void train_lenet(const std::string& data_dir_path,
     nn.test(test_images, test_labels).print_detail(std::cout);
     // save network model & trained weights
     //nn.save("LeNet-model");
-    nn.save("D:\\LeNet-model");
+    nn.save("D:\\LeNet-model_tab");
 
 
     // 테스트 이미지 결과
@@ -229,7 +230,7 @@ static void train_lenet(const std::string& data_dir_path,
         std::vector<std::pair<double, int>> scores;
 
         // sort & print top-3
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < 10; i++)
             scores.emplace_back(rescale<tiny_dnn::tanh_layer>(res[i]), i);
 
         sort(scores.begin(), scores.end(), std::greater<std::pair<double, int>>());
@@ -261,7 +262,7 @@ static void usage(const char* argv0) {
 
 int main(int argc, char** argv) {
     double learning_rate = 1;
-    int epochs = 10;//30;
+    int epochs = 2;//30;
     std::string data_path = "";
     int minibatch_size = 16;
     tiny_dnn::core::backend_t backend_type = tiny_dnn::core::default_engine();
